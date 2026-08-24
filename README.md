@@ -25,7 +25,7 @@ data modify storage mcstd:param value set value {weight:20, value:"diamond"}
 function mcstd:priority_queue/push
 
 # 要素を取得して削除する
-# "diamond" -> "iron" の順に取得される
+# {weight:20, value:"diamond"} -> {weight:5, value:"iron"} の順に取得される
 function mcstd:priority_queue/pop_top
 tellraw @a {"storage":"mcstd:returns", "nbt":"value"}
 
