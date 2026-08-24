@@ -1,0 +1,15 @@
+struct Root {
+    [string]: [Element],
+}
+
+struct Element {
+    weight: int,
+    value: any,
+}
+
+dispatch minecraft:storage[mcstd:priority_queue] to Root
+
+dispatch minecraft:storage[mcstd:param] to (
+    struct { id: int } |
+    struct { value: Element }
+)
