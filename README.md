@@ -8,7 +8,7 @@
 ## 現在実装済みのもの
 - 優先度付きキュー
 
-## 優先度付きキュー
+### 優先度付きキュー
 最大ヒープ方式の優先度付きキュー。 `weight` の大きい要素から順に取り出されます。
 
 ### 使用例
@@ -27,10 +27,10 @@ function mcstd:priority_queue/push
 # 要素を取得して削除する
 # "diamond" -> "iron" の順に取得される
 function mcstd:priority_queue/pop_top
-tellraw @a {"storage":"mcstd:returns","nbt":"value"}
+tellraw @a {"storage":"mcstd:returns", "nbt":"value"}
 
 function mcstd:priority_queue/pop_top
-tellraw @a {"storage":"mcstd:returns","nbt":"value"}
+tellraw @a {"storage":"mcstd:returns", "nbt":"value"}
 ```
 
 ## ライセンス
